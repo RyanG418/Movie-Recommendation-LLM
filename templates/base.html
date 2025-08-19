@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title or "Local Movie Recs (LLM)" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind via CDN for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <header class="py-6 border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">
+      <h1 class="text-xl font-semibold">🎬 Local Movie Recommender</h1>
+      <a href="/" class="text-slate-300 hover:text-white">New Search</a>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-4 py-8">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="max-w-5xl mx-auto px-4 pb-8 text-sm text-slate-400">
+    Built with Flask · pandas · SQLite · LLaMA (local)
+  </footer>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+flask==3.0.3
+pandas==2.2.2
+scikit-learn==1.5.1
+sqlalchemy==2.0.32
+python-dotenv==1.0.1
+llama-cpp-python==0.2.90
+tomli==2.0.1 ; python_version < "3.11"
+tomllib ; python_version >= "3.11"

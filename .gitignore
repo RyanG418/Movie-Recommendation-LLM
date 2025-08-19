@@ -1,0 +1,7 @@
+.env
+config.toml
+__pycache__/
+*.pyc
+data/cache/
+data/recs.db
+models/
